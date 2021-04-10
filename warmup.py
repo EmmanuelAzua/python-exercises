@@ -41,10 +41,14 @@ sports_car = {
     "Model": "diablo"
     }
 
-car_catalogue = [truck, sedan, sports_car]
+# car_catalogue = [truck, sedan, sports_car]
 #car_catalogue[1]["Make"]
 
-car_catalogue.keys()
+for k in truck.keys():
+    truck[k.upper()] = truck[k]
+
+print(truck)
+# car_catalogue.keys()
 
 #make = car_catalogue[0, "make"]
 #model = car_catalogue["model"]
