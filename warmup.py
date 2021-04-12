@@ -44,8 +44,7 @@ sports_car = {
 # car_catalogue = [truck, sedan, sports_car]
 #car_catalogue[1]["Make"]
 
-for k in truck.keys():
-    truck[k.upper()] = truck[k]
+d.update({k.upper(): v.upper() for k, v in d.items()})
 
 print(truck)
 # car_catalogue.keys()
