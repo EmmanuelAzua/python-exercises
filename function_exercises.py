@@ -115,6 +115,11 @@ remove_vowels("perrito")
 # % Completed will become completed
 
 def normalize_name(string):
-    string = string.lower()
-print(string)
+    if string == ("100% Completed"):
+        return string.strip("100%").lower()
+    return string.lower().rstrip(" ").lstrip(" ").replace(" ", "_")
+print(normalize_name("    EL PATRIARCADO DEBE CAER!!!   KLJSNDDF JNLiulenjna 38278347y24 @##@#E      "))
+
+
+
 
